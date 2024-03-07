@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+
+:root {
+  --primary-color: #b1a0cc;
+  --border-radius: 5px;
+  --navColor1: #21292c;
+  --navColor2: #aa3e39;
+  --navColor3: #aa6e39;
+  --navColor4: #236267;
+  --navColor5: #2c8437;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23b8b8b8' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+    line-height: 1.6;
+    margin: 0px;
+    padding: 20px;
+    font-size: 17px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 500px;
+    margin: 5px auto 10px;
+    user-select: none;
+    font-family: karla;
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 500px;
+    margin: 5px auto 10px;
+    user-select: none;
+    font-family: karla;
+  }
+
+/* Nav Menu Items */
+
+
+nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: stretch;
+    /* flex-wrap: wrap; */
+    width: 175px;
+    margin-top: 130px; 
+}
+
+.pages {
+    background: rgba(0, 0, 0, 0.425);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 1px;
+    width: 100%;
+    z-index: 1000; /* Ensures it's above other content */
+    transition: top 0.3s; /* Smooth transition when scrolling */
+}
+
+.pages:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#about {
+    background-color: var(--navColor1);
+}
+
+#CV {
+    background-color: var(--navColor2);
+}
+
+#education {
+    background-color: var(--navColor3);
+}
+
+#skill {
+    background-color: var(--navColor4);
+}
+
+#work-experience {
+    background-color: var(--navColor5);
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+
+/* ABOUT Page Setting */
+.about-container {
+    max-width: 900px;
+    margin: auto;
+}
+ 
+
+
+/* CV Page Setting */
+
+.cv-container {
+    max-width: 860px;
+    margin: auto;
+    text-align: justify;
+}
+.cv-date {
+    text-align: right;
+    /* margin-bottom: 20px; */
+}
+.cv-content {
+    margin-bottom: 20px;
+}
+.cv-signature {
+    text-align: right;
+}
+
+/* Education Page Setting */
+.education {
+    max-width: 860px;
+    margin: auto;
+    font-size: 20px;
+    font-family: karla;
+    display: block;
+    background: rgba(129, 125, 125, 0.425);
+    border-radius: var(--border-radius);
+    text-align: justify;
+}
+
+.degree {
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+.school {
+    font-weight: bold;
+    color: #0c0c0c;
+    margin-left: 10px;
+}
+
+.date {
+    font-weight: bold;
+    color: #7a2d2d;
+    margin-left: 10px;
+}
+
+/* skill page setting */
+.skill-container {
+    width: 860px;
+    margin: auto;
+    font-size: 15px;
+    font-family: karla;
+    display: block;
+    background: rgba(129, 125, 125, 0.425);
+    border-radius: var(--border-radius);
+    font-family: karla;
+    text-align: justify;
+}
+
+.skill-container ul {
+    margin-right: 15px;
+}
+
+/* Experience Page Setting */
+.experience-container {
+    width: 860px;
+    margin: auto;
+    font-size: 15px;
+    font-family: karla;
+    display: block;
+    background: rgba(129, 125, 125, 0.425);
+    border-radius: var(--border-radius);
+    font-family: karla;
+    text-align: justify;
+    font-weight: bold;
+}
+.job-title {
+    font-weight: bold;
+    color: #000000;
+}
+.company {
+    color: #000000;
+    margin-left: 10px;
+}
+.date {
+    color: #0c0c0c;
+}
+.description {
+    margin: 10px;
+}
+
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+}
